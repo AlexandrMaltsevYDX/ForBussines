@@ -1,0 +1,180 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  <title>Dasha The Best</title>
+</head>
+
+<body>
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container collapse navbar-collapse flex-lg-column align-items-centr">
+      <ul class="navbar-nav flex-lg-column ">
+        <li class="nav-item">
+          <a class="nav-link" href="#about-me">About me</a>
+        </li>
+        <li class="nav-item mt-4">
+          <a class="nav-link" href="#about-you">About you</a>
+        </li>
+        <li class="nav-item mt-4">
+          <a class="nav-link" href="#just-fun">Just fun</a>
+        </li>
+        <li class="nav-item mt-4">
+          <a class="nav-link" href="#folow-me">Folow me</a>
+        </li>
+        <li class="nav-item mt-4">
+          <a class="nav-link" href="#booking">Booking</a>
+        </li>
+        <li class="nav-item mt-4">
+          <a class="nav-link" href="#my-clients">My Clients</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!-- //NAVBAR -->
+
+  <!-- CONTENT WRAPER -->
+  <div id="content-wrapper">
+    <!-- ABOUT ME  -->
+    <section id="about-me" class="full-height px-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-8">
+            <h1 class="fw-boold">I'm Dasha Maltseva</h1>
+            <p>and keep calm and carry on</p>
+            <p>and may the force be with you</p>
+            <p>you are a failure nobody likes you die</p>
+            <p>Call me: 112</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- //ABOUT ME  -->
+    <!-- ABOUT YOU  -->
+    <section id="about-you" class="full-height px-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-8">
+            <h1 class="fw-boold">I'm sorry but YOU</h1>
+            <p>keep calm and carry on</p>
+            <p>may the force be with you</p>
+            <p>you are a failure nobody likes you die</p>
+            <p>Call me: 112</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- //ABOUT YOU  -->
+    <!-- just-fun  -->
+    <section id="just-fun" class="full-height px-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-8">
+            <h1 class="fw-boold">Just fun</h1>
+            <p>hear are reals from YouTube</p>
+            <p>hear are reals from YouTube</p>
+            <p>hear are reals from YouTube</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- //just-fun  -->
+    <!-- Folow me  -->
+    <section id="folow-me" class="full-height px-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-8">
+            <h1 class="fw-boold">Folow me</h1>
+            <p>YouTube</p>
+            <p>Instagram</p>
+            <p>Telegram</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- //Folow me  -->
+    <!-- Booking  -->
+    <section id="booking" class="full-height px-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-8">
+            <h1 class="fw-boold">I CAN'T HALP U BUT</h1>
+            <h1 class="fw-boold">U CAN PAY ME</h1>
+          </div>
+          <form method="post" action="/customer-booking/">
+            <div class="row g-2">
+              <div class="form-group col">
+                <input type="text" class="form-control" placeholder="Yor name" name="customer_name">
+              </div>
+              <div class="form-group col">
+                <input type="text" class="form-control" placeholder="Yor mail" name="customer_mail">
+              </div>
+            </div>
+            <div class="row mt-2">
+              <div class="form-group col">
+                <input type="text" class="form-control" placeholder="Yor problem, but whos care?"
+                  name="customer_porblem">
+              </div>
+            </div>
+            <div class="row mt-2">
+              <div class="form-group col">
+                <input class="btn btn-primary" type="submit" value="Submit">
+              </div>
+            </div>
+          </form>
+        </div>
+    </section>
+    <!-- //Booking  -->
+    <!-- My Clients  -->
+    <section id="my-clients" class="full-height px-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-8">
+            <h1 class="fw-boold">WHO IS NEXT</h1>
+          </div>
+          <table class="table g-2">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Name</th>
+                <th scope="col">When</th>
+                <th scope="col">Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="table-success">
+                <th scope="row">1</th>
+                <td>Mark</td>
+                <td>01/01/2023</td>
+                <td>success</td>
+              </tr>
+              <tr class="table-info">
+                <th scope="row">2</th>
+                <td>Jacob</td>
+                <td>01/01/2023</td>
+                <td>expected</td>
+              </tr>
+              <tr class="table-danger">
+                <th scope="row">3</th>
+                <td>Ivan</td>
+                <td>01/01/2023</td>
+                <td>canceled</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+    </section>
+    <!-- //My Clients -->
+  </div>
+  <!-- //CONTENT WRAPER -->
+  <script src="{% static 'js/bootstrap.js' %}"></script>
+  <script src="{% static 'js/main.js' %}"></script>
+</body>
+
+</html>

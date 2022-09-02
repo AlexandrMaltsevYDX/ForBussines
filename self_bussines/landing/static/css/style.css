@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&display=swap");
+
+:root {
+  --color-body: #513226;
+  --color-heading: #eef3db;
+  --color-base: #033f47;
+  --color-base2: #c2c2c2;
+  --color-brand: #e0f780;
+  --color-brand2: #deff58;
+  --color-red: red;
+  --sidbar-width: 30vh;
+  --font-base: "Bai Jamjuree";
+}
+
+body {
+  background-color: var(--color-base2);
+  background-size: cover;
+  background-position: bottom -9vh right 18vh;
+  font-family: var(--font-base), sans-serif;
+  min-height: 100vh;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--color-heading);
+  font-weight: 700;
+}
+
+a {
+  text-decoration: none;
+  transition: all 0.4s ease;
+}
+
+img {
+  width: 100%;
+}
+
+/* NAVBAR */
+.navbar .nav-link {
+  font-weight: 700;
+  font-size: 3vh;
+  text-transform: uppercase;
+  color: var(--color-body);
+}
+
+.navbar .nav-link:hover {
+  color: white;
+}
+.navbar .nav-link:active {
+  color: var(--color-brand);
+}
+
+.navbar {
+  min-height: 100vh;
+  width: var(--sidbar-width);
+  background: linear-gradient(rgba(57, 57, 57, 0.2), rgba(57, 57, 57, 0.2));
+}
+/* //NAVBAR */
+
+
+/* CONTENT WRAPER */
+#content-wrapper {
+  padding-left: var(--sidbar-width);
+}
+
+#content-wrapper h1{
+    font-size: 5vh;
+  }
+
+  #content-wrapper p{
+    font-size: 3vh;
+  }
+
+
+.full-height {
+    min-height: 100vh;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* section about me */
+
+/* section about me */
+
+
+/* //CONTENT WRAPER */
